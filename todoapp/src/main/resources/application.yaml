@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: todoapp
+
+logging:
+  level:
+    ROOT: DEBUG
+
+
+server:
+  port: 9090
