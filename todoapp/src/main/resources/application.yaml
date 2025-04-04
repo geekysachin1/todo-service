@@ -1,6 +1,10 @@
 spring:
   application:
     name: todoapp
+  security:
+    user:
+      name: admin
+      password: admin
 
 logging:
   level:

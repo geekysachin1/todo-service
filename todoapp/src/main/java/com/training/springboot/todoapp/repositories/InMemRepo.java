@@ -26,6 +26,7 @@ public class InMemRepo {
     }
 
     public void add(ToDoItem item) {
+        item.id = getId();
         toDoItems.add(item);
     }
 
@@ -35,18 +36,19 @@ public class InMemRepo {
                     td.completed = item.completed;
                     td.dueDate = item.dueDate;
                     td.title = item.title;
-                    td.username = item.username;
+                    //td.username = item.username;
                 });
     }
 
     public void delete(long id) {
-        toDoItems.stream().filter(x -> x.id == id)
-                .forEach(item -> {
-                    toDoItems.remove(item);
-                });
+        toDoItems.removeIf(x -> x.id == id);
     }
 
     public Optional<ToDoItem> getById(long id) {
         return toDoItems.stream().filter(x -> x.id == id).findFirst();
+    }
+
+    private long getId() {
+        return toDoItems.size() + 1;
     }
 }

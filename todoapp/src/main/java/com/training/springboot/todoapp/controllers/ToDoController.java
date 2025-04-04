@@ -25,13 +25,13 @@ public class ToDoController {
     }
 
     @GetMapping("/{username}/all")
-    public List<ToDoItem> getAll(@PathVariable String username) {
-        return toDoService.getAll(username);
+    public ResponseEntity<List<ToDoItem>> getAll(@PathVariable String username) {
+        return new ResponseEntity<>(toDoService.getAll(username), HttpStatus.OK);
     }
 
     @GetMapping("/{username}/{id}")
-    public Optional<ToDoItem> getById(@PathVariable String username, @PathVariable long id) {
-        return toDoService.getById(username, id);
+    public ResponseEntity<Optional<ToDoItem>> getById(@PathVariable String username, @PathVariable long id) {
+        return new ResponseEntity<>(toDoService.getById(username, id), HttpStatus.OK);
     }
 
     @PostMapping("/add")
