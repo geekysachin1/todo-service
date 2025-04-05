@@ -1,14 +1,12 @@
-<<<<<<< HEAD
-=======
+
 HELP.md
->>>>>>> b61a1ea (merge commit)
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-<<<<<<< HEAD
+.DS_Store
+gradle/.DS_Store
+
 ### IntelliJ IDEA ###
 .idea/modules.xml
 .idea/jarRepositories.xml
@@ -21,10 +19,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
-### Eclipse ###
-=======
 ### STS ###
->>>>>>> b61a1ea (merge commit)
 .apt_generated
 .classpath
 .factorypath
@@ -36,30 +31,3 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-<<<<<<< HEAD
-=======
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
->>>>>>> b61a1ea (merge commit)
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
-.vscode/
-<<<<<<< HEAD
-
-### Mac OS ###
-.DS_Store
-=======
->>>>>>> b61a1ea (merge commit)
