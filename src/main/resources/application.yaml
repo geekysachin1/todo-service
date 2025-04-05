@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: todoapp
+  security:
+    user:
+      name: admin
+      password: admin
+
+logging:
+  level:
+    ROOT: DEBUG
+
+
+server:
+  port: 9090
