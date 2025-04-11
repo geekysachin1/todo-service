@@ -1,10 +1,14 @@
 spring:
+  config.import: optional:secret.yaml
   application:
     name: todoapp
   security:
-    user:
-      name: admin
-      password: admin
+    oauth2:
+      client:
+        registration:
+          google:
+            client_id: ${client_id}
+            client_secret: ${client_secret}
 
 logging:
   level:
